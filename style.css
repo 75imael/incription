@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+li a:hover{
+    color: #ff3d00;
+}
+body{
+    background-color:#eef8ff;
+
+}
+footer SPan{
+    text-align: center;
+    display: block;
+    padding: 10px;
+}
+footer h3{
+    padding:10px;
+}
+footer{
+    bottom: 5px;
+    background: #fff;
+    color: #336;
+    padding-top: 20px; 
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#336;
+    color:#336;
+}
+.nav-links{
+    padding: 10px 0;
+}
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+
+}
+.nav-links li a{
+    text-decoration: none;
+    color:#fff;
+    padding: 5px 0;
+    position: relative;
+}
+.nav-links li a::after{
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: #ff3d00;
+    transition: width 0.5ms;
+}
+.nav-links li a:hover::after{
+
+    width:100% ;
+    color: aqua;
+
+}
+ .row{
+width: 100%;
+
+display: flex;
+padding-bottom: 20px;
+justify-content: space-between;
+flex-wrap: wrap;
+align-items: flex-start; 
+margin: auto;
+border-top: 2px solid #336; padding-top: 20px;
+padding-left: 10px;
+
+} 
+.logo{
+    color: #fff;
+    width: 50px;
+    margin: 5px 5px;
+}
+
+.col{
+    flex-basis:25%;
+ }
+.liens a{
+    color: red;
+    text-decoration: none;
+}
+
+.header-1{
+    display:inline;
+}
+
+.texte{
+    background:rgb(0, 0, 10);
+    color: #fff;
+    text-align: center;
+    display: block;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 12px;
+}
+
+
+.reseaux a{
+    color: rgb(243, 16, 53);
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+ .imagePricipal{
+
+    padding-top:60px;
+    background: url(image/imagepricipal.jpg) ;
+    padding-bottom: 100px;
+    background-size: cover;
+    background-position: center;
+    height: 50vh; 
+} 
+
+
+
+/* parties cours */
+
+.cours a{
+    color: #336;
+    text-decoration: none;
+  
+    font-weight: bold;
+    padding-left: 20px;
+  font-size: 20px;
+}
+.presenation a{
+    color: #336;
+    text-decoration: none;  
+    font-weight: bold;
+    padding-left: 20px;
+  font-size: 20px;
+
+}
+
+.presenation{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+}
+@media(max-width:600px)
+{
+    html{
+        font-size: 50%;
+    }
+}
